@@ -1,0 +1,65 @@
+{
+    "tasks": [
+		{
+			"label": "workspace Lua 5.4",
+			"type": "shell",
+			"command": "lua54 '${file}'",
+			"presentation": {
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "workspace Node.js",
+			"type": "shell",
+			"command": "node '${file}'",
+			"presentation": {
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "workspace C",
+			"type": "shell",
+			"command": "cd '${fileDirname}'; gcc -o '${fileBasenameNoExtension}' '${fileBasename}'; ./'${fileBasenameNoExtension}'",
+			"presentation": {
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "workspace C++",
+			"type": "shell",
+			"command": "cd '${fileDirname}'; g++ -o '${fileBasenameNoExtension}' '${fileBasename}'; ./'${fileBasenameNoExtension}'; del '${fileBasenameNoExtension}.exe'",
+			"presentation": {
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "workspace Python",
+			"type": "shell",
+			"command": "cd '${fileDirname}'; python '${file}'",
+			"presentation": {
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "workspace Java",
+			"type": "shell",
+			"command": "cd '${fileDirname}'; javac '${fileBasename}'; java '${fileBasenameNoExtension}'",
+			"presentation": {
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"problemMatcher": []
+		},
+    ],
+    "version": "2.0.0"
+}
