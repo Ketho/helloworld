@@ -8,7 +8,7 @@
 			"problemMatcher": []
 		},
 		{
-			"label": "Python",
+			"label": "workspace Python",
 			"type": "shell",
 			"command": "source .venv/bin/activate && python '${file}'",
 			"presentation": {"showReuseMessage": false, "clear": true},
