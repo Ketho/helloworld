@@ -1,13 +1,10 @@
 {
     "tasks": [
 		{
-			"label": "workspace Lua 5.4",
+			"label": "Lua",
 			"type": "shell",
-			"command": "lua54 '${file}'",
-			"presentation": {
-				"showReuseMessage": false,
-				"clear": true
-			},
+			"command": "source .lua/bin/activate && lua '${file}'",
+			"presentation": {"showReuseMessage": false, "clear": true},
 			"problemMatcher": []
 		},
 		{
