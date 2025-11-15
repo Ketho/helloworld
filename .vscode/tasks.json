@@ -1,9 +1,16 @@
 {
     "tasks": [
 		{
-			"label": "Lua",
+			"label": "workspace Lua",
 			"type": "shell",
 			"command": "source .lua/bin/activate && lua '${file}'",
+			"presentation": {"showReuseMessage": false, "clear": true},
+			"problemMatcher": []
+		},
+		{
+			"label": "Python",
+			"type": "shell",
+			"command": "source .venv/bin/activate && python '${file}'",
 			"presentation": {"showReuseMessage": false, "clear": true},
 			"problemMatcher": []
 		},
@@ -31,16 +38,6 @@
 			"label": "workspace C++",
 			"type": "shell",
 			"command": "cd '${fileDirname}'; g++ -o '${fileBasenameNoExtension}' '${fileBasename}'; ./'${fileBasenameNoExtension}'; del '${fileBasenameNoExtension}.exe'",
-			"presentation": {
-				"showReuseMessage": false,
-				"clear": true
-			},
-			"problemMatcher": []
-		},
-		{
-			"label": "workspace Python",
-			"type": "shell",
-			"command": "cd '${fileDirname}'; python '${file}'",
 			"presentation": {
 				"showReuseMessage": false,
 				"clear": true
